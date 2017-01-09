@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content='IE=edge'>
+<meta name='viewport' content="width=device-width,initial-scale=1">
+<title>旅游网站</title>
+<script src='jquery/jquery.min.js'></script>
+<script src="js/js.cookie-2.1.0.min.js"></script>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="food"><h4>连云港</h4>
+        <h5>最值得吃</h5>
+        <div class="top_1">
+        <img src='' id="pic_2">
+          <div class="summary">
+         菜品名称: <span></span><span id='name_2'>12</span><br>
+          <span>别名:</span><span  id='alias_2'></span><br>
+          <span>口味:</span><span  id='taste_2'></span><br>
+          <span>地区:</span><span id='area_2'></span><br>
+          <span>推荐人群：</span><span id='propose_2'></span><br>
+          <p id='intro_2'></p>
+          </div>
+        </div>
+      </div>
+
+      <script src="js/arg-1.3.min.js"></script>  
+<script type="text/javascript">
+  var id=Arg('id')
+  $(function(){
+ 
+   $.ajax({
+          url:'wad/'+Arg('id'),
+          method:'get',
+          // dateType:'json',
+          success:function(data,status,xhr){
+            console.log(data);
+            for(var i=0;i<=data.length;i++){
+      $('#a').text(data[i].name);
+      $('#b').text(data[i].alias);
+      $('#c').text(data[i].taste);
+      $('#d').text(data[i].area);
+      $('#e').text(data[i].propose);
+      $('#f').text(data[i].history);
+      $('#photo_0').attr('src',data[0].pic_1);
+      }
+          },
+          error:function(xhr,status,error){},
+  })
+
+    $.ajax({
+          url:'log/browse/wad/'+Arg('id'),
+          method:'get',
+          // dateType:'json',
+          success:function(data,status,xhr){
+          },
+          error:function(xhr,status,error){},
+  })
+
+   
+
+
+  })
+</script>
+</body>
+</html>

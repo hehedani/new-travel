@@ -1,0 +1,10 @@
+body{margin:0 auto;padding: 0 auto;}
+article{
+	width:1280px;
+	margin:0 auto;
+	padding: 0 auto;}
+a{color:black;font-size: 14px;font-family: '微软雅黑';font-style: none;}
+li{list-style-type: none;}
+h1,h2,h3,h4,h5,h6{font-family: '微软雅黑';}
+p,span{font-family: '微软雅黑'}
+.clear{clear: both}

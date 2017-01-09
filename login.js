@@ -1,0 +1,31 @@
+$(function(){
+	Cookies.remove('user')
+	$('#login').on('click',function(){
+		// var user=document.getElementById('account').value;
+		$.ajax({
+			url:'login',
+			data:{
+				account:$('#account').val(),
+				password:$('#password').val()
+			},
+			type:'post',
+			dataType:'json',
+			success:function(data,status,xhr){
+				console.log(data);
+				if(data.message=='OK'){
+					console.log('login');
+					Cookies.set('user',data.userId);
+					window.location.href='index.html';
+
+				}
+				else{
+					alert('账号或密码错误');
+				}
+			},
+			error:function(xhr,status,data){
+				console.log(data);
+				alert('服务器错误');
+			}
+		});
+	});
+});

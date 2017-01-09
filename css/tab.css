@@ -1,0 +1,57 @@
+.aaa {
+	padding-top: 15px;
+	background-color: #FFF;
+	padding-bottom: 20px;
+}
+
+/* circle */
+
+#navCircle {
+	background: white;
+	border-bottom: 1px solid #9FB1BC;
+	width: 1117px;
+	padding-top: 0;
+	padding-right: 0;
+	padding-left: 10px;
+	padding-bottom: 2px;
+	margin: 0;
+}
+
+#navCircle li {
+	display: inline;
+	list-style-type: none;
+	padding-top: 0;
+	padding-right: 30px;
+	padding-bottom: 0;
+	padding-left: 0px;
+}
+
+#navCircle a:link, #navCircle a:visited {
+        float: left;
+        font-size: 10px;
+        line-height: 14px;
+        font-weight: bold;
+        padding: 0 12px 6px 12px;
+        text-decoration: none;
+        color: #708491;
+}
+
+#navCircle a:link.active, #navCircle a:visited.active, #navCircle a:hover {
+        padding-bottom: 6px;
+        color: #000;
+        background: url(../images/circle.gif) no-repeat bottom center;
+}
+
+
+/* code for presentation purpose (CSS preview) */
+body {
+        font-family: verdana, sans-serif;
+        font-size: 11px;
+        background: #eeeeee;
+}
+
+h4 {
+        font-size: 100%;
+        color: #999;
+        margin: 0;
+}

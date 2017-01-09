@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>渲染与组件</title>
+</head>
+<div id='result-render'></div>
+<div id='result-compose'></div>
+<body>
+<script src="js/jquery.min.js"></script>
+<script src="react/dist/react.min.js"></script>
+<script src="react-dom/dist/react-dom.min.js"></script>
+<script src="babel.min.js"></script>
+<script type="text/babel">
+function Welcome(props){
+		return<h3>Hello, {props.name}</h3>
+	}
+	const element = <Welcome name="刘浪"/>;
+	ReactDOM.render(
+		element,
+		document.getElementById('result-render')
+	);
+</script>
+<script type="text/babel">
+
+function App(){
+	return(
+	<div>
+		<Welcome name="刘浪"/>
+		<Welcome name="老陈"/>
+		<Welcome name="罗宁"/>
+	</div>
+	);
+}	
+ReactDOM.render(
+	<App/>,
+	document.getElementById('result-compose')
+);
+</script>
+</body>
+</html>
+<!-- class Welcome extends React.Component{
+	render(){
+	return<h1>Hello, {this.props.name}</h1>
+	}
+} -->

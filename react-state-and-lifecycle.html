@@ -1,0 +1,96 @@
+<html>
+<head>
+	<title>状态与生命周期--条件渲染</title>
+<script src="js/jquery.min.js"></script>
+<script src="react/dist/react.min.js"></script>
+<script src="react-dom/dist/react-dom.min.js"></script>
+<script src="babel.min.js"></script>
+<script type="text/babel" src='react-js/clock.js'></script>
+<script type="text/babel" src='react-js/handing-events.js'></script>
+<script type="text/babel" src='react-js/Conditional Render.js'></script>
+</head>
+<body>
+	<div id='result-final'></div>	
+	<div id='result-switch'></div><br/><br/>
+	<div id=result-preventing></div>
+	<div id='result-greeting'></div>
+	<div id='result-login-control'></div>
+
+<script type="text/babel">
+function UserGreeting(props){
+	return <h4>欢迎回来</h4>;
+}
+function GuestGreeting(props){
+	return <h4>请登录</h4>
+}
+function Greeting(props){
+	const isLoggedIn=props.Cookies
+	if(isLoggedIn){
+	return <UserGreeting/>;
+	}
+	return <GuestGreeting/>;
+}
+//ReactDOM.render(
+//<Greeting isLoggedIn={false}/>,
+//document.getElementById('result-greeting')
+//);
+
+  function LoginButton(props) {
+    return (
+      <button onClick={props.onClick} className="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+        登录
+      </button>
+    )
+  }
+
+  function LogoutButton(props) {
+    return (
+      <button onClick={props.onClick} className="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+        退出登录
+      </button>
+    )
+  }
+
+  class LoginControl extends React.Component {
+    constructor(props) {
+      super(props)
+      this.handleLoginClick = this.handleLoginClick.bind(this)
+      this.handleLogoutClick = this.handleLogoutClick.bind(this)
+      this.state = {isLoggedIn: false}
+    }
+
+    handleLoginClick() {
+      console.log('login')
+      this.setState({isLoggedIn: true})
+    }
+
+    handleLogoutClick() {
+      console.log('logout')
+      this.setState({isLoggedIn: false})
+    }
+
+    render() {
+      const isLoggedIn = this.state.isLoggedIn
+      let button = null
+      if (isLoggedIn) {
+        button = <LogoutButton onClick={this.handleLogoutClick} />
+
+      } else {
+        button = <LoginButton onClick={this.handleLoginClick} />
+      }
+      return (
+        <div>
+          <Greeting isLoggedIn={isLoggedIn} />
+          {button}
+        </div>
+      )
+    }
+  }
+  ReactDOM.render(
+    <LoginControl />,
+    document.getElementById('result-login-control')
+  )
+  
+</script>	
+</body>
+</html>

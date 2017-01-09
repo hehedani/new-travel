@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Journey Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- web-font -->
+<!-- <link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> -->
+<link href="css/tab.css" rel="stylesheet">
+<!-- web-font -->
+<!-- js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/js.cookie-2.1.0.min.js"></script>
+<script src="index.js"></script>
+<script src="js/zhankai.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- js -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script src="react/dist/react.min.js"></script>
+<script src="react-dom/dist/react-dom.min.js"></script>
+<script src="babel.min.js"></script>
+<!-- <script src="react-js/Nickname.js" type='text/babel'></script> -->
+<script type="text/babel" src="react-js/react-login.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<!-- start-smoth-scrolling -->
+</head>
+	<body>
+		<!-- header -->
+		<div class="header">
+			<!-- container -->
+			<div class="container">
+				<div class="head-bg">
+					<div class="head-logo">
+						<a href="index.html"><img src="images/logo1.png" alt="" /></a>
+					</div>
+					<div class="logo-border"><img src="images/spirals.png" alt="" /></div>
+					<div class="top-nav">
+						<span class="menu"><img src="images/menu.png" alt=""></span>
+							<ul class="cl-effect-1">
+								<li><a href="index.html">首页</a></li>                                             
+								<li><a href="about.html">美食推荐</a></li>
+								<li><a href="booking.html">想  去</a></li> 
+								<li><a href="news.html">景点推荐</a></li> 
+								<li><a href="mail.html">MAIL US</a></li>  
+								<li><div class="admin" id='result-nickname'></div></li>
+								<li><div id="logg"></div></li>
+							</ul>
+							<!-- script-for-menu -->
+							 <script>
+							   $( "span.menu" ).click(function() {
+								 $( "ul.cl-effect-1" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							</script>
+						<!-- /script-for-menu -->
+	  <div class="col-md-4 col-md-offset-4"  id="sousuo">
+      <label>想去</label><input type="text" name="" class="form-control" id='input'>
+      <select id='s'>
+               <option value=1>美食</option>
+               <option value=2>景点</option>
+      </select>
+      <button input="submit" value="搜索" id="search" class="btn btn-default">搜索</button>
+    </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- //container -->
+
+		</div>
+		<!-- //header -->
+		<!-- banner-grids -->
+
+		<div class="banner-grids">
+			<!-- container -->
+			<div class="container">
+				<div class="banner-grid-info">
+					<h3>Visiting Places</h3>					
+				</div>
+				<div class="top-grids">
+					<ul id="navCircle">
+<!-- CSS Tabs -->
+<li><a class="active" href="news.html?id=1&type=category" id="spot_0">湖泊风景区</a></li>
+<li><a href="news.html?id=2&type=category" id='spot_1'>山岳风景区</a></li>
+<li><a href="news.html?id=3&type=category" id="spot_2">森林风景区</a></li>
+<li><a href="news.html?id=4&type=category" id="spot_3">山水风景区</a></li>
+<li><a href="news.html?id=5&type=category" id="spot_4">海滨风景区</a></li>
+<li><a href="news.html?id=6&type=category" id="spot_5">休闲疗养避暑胜地</a></li>
+<li><a href="news.html?id=7&type=category" id="spot_6">宗教寺庙名胜区</a></li>
+<li><a href="news.html?id=8&type=category" id="spot_7">革命纪念地</a></li>
+           </ul>
+					<div class="top-grid">
+						<a href="single.html"><img src="images/芦林湖.jpg" alt="" /></a>
+						<div class="top-grid-info">
+							<a href="#" id='lake_0'>芦林湖</a>
+							<p>芦林湖位于江西省九江市庐山区海拔1040米的东谷芦林盆地，故又称东湖。芦林湖四周群山环抱，苍松翠柏，湖水如镜，似发光的碧玉镶嵌在林荫秀谷之中，在缥缈的云烟衬托下，犹如天上神湖。</p>
+						</div>
+					</div>
+					<div class="top-grid">
+						<a href="#" id='lake_1'><img src="images/mountain/岳麓山.jpg" alt="" /></a>
+						<div class="top-grid-info">
+							<a href="#">岳麓山</a>
+							<p>湘江西岸的岳麓山，是长沙的著名景点，这里古迹众多，有著名的岳麓书院、爱晚亭等。山中树木茂盛，古树名木随处可见，当地市民也喜欢来这里登山休闲。每年的12月，这里又成为赏红叶的地方。 </p>
+						</div>
+					</div>
+					<div class="top-grid">
+						<a href="#" id='lake_2'><img src="images/tree/长寿国家森林公园.jpg" alt="" /></a>
+						<div class="top-grid-info">
+							<a href="single.html">长寿国家森林公园</a>
+							<p>长寿国家森林公园位于哈尔滨市东南，距市区50公里，是离哈尔滨市最近的一处天然森林公园。园内森林茂密，群峰起伏，层峦叠嶂，有丞相峰，擎天峰及背阴山三大风景区，已发现景点景观70余处.</p>
+						</div>
+					</div>
+					<div class="top-grid">
+						<a href="#" id='lake_3'><img src="images/lake/黄龙潭.jpg" alt="" /></a>
+						<div class="top-grid-info">
+							<a href="single.html">黄龙潭</a>
+							<p>黄龙潭幽深、静谧，古木掩映的峡谷间，一道溪涧穿绕石垒而下，银色瀑布冲击成暗绿色的深潭。静坐潭边，听古道落叶、宿鸟鸣涧，自然升起远离尘世、超凡脱俗之感。黄龙潭瀑布以秀、幽见长。</p>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="top-grids">
+				 <ul id="navCircle">
+<!-- CSS Tabs -->
+<li><a class="active" href="#">猜你喜欢</a></li>
+<li><a href="news.html?id=1&type=region" >东北</a></li>
+<li><a href="scenery.html?id=2&type=region">北方</a></li>
+<li><a href="scenery.html?id=3&type=region">西北地区</a></li>
+<li><a href="scenery.html?id=4&type=region">西</a></li>
+<li><a href="scenery.html?id=5&type=region">中</a></li>
+<li><a href="scenery.html?id=6&type=region">东南</a></li>
+<li><a href="scenery.html?id=7&type=region">南</a></li>
+<li><a href="secenty.html?id=8&type=region">西南</a></li>
+            </ul> 
+					<div class="top-grid">
+						<a href="single.html"><img src="images/上海.jpg" alt="" id='region_pic0'/></a>
+						<div class="top-grid-info">
+							<div class="main" id='main2'>
+							<a href="single.html" id='region_name0'>上海</a>
+							<p class="mainf" id="region_intro0">东方明珠、金贸大厦、环球金融中心、
+							海族馆、昆虫馆、豫园（城隍庙）、南京路步行街、</p><p>杜莎夫人蜡像馆、野生动物园、夜游黄浦江、外滩、上海博物馆、上海城市规划馆、田子坊、七浦路、东方绿舟、欢乐谷（玛雅水世界）这些都比较出名</p>
+							</div>
+							<div class="intro">
+								<span class="key" onclick="fn(this,2)">展开全文</span>
+							</div>
+						</div>
+		
+					</div>
+					<div class="top-grid">
+						<a href="single.html"><img src="images/厦门.jpg" alt="" id='region_pic1'/></a>
+						<div class="top-grid-info">	
+						<div class="main" id='main3'>
+							<a href="single.html" id='region_name1'>厦门</a>
+							<p class="mainf"  id="region_intro1">厦门属南亚热带海洋性季风气候，冬无严寒、夏无酷暑，一年四季树木常青、</p><p>鲜花盛开。厦门每年1月最冷，最低气温9-11C；7月最热，最高气温31-33C；5-6月是梅雨季节，7-9月为台风季节，这两个季节都会有大的降雨，出门需携带雨具，另外，若预报有台风时，最好不要出门，且此时海边的船只也全部停开，不能出港。因此去厦门旅游，只要避开台风季节，其他时间去都很不错。</p>
+						</div>
+						<div class="intro">
+								<span class="key" onclick="fn(this,3)">展开全文</span>
+							</div>	
+						</div>
+					</div>
+					<div class="top-grid">
+						<a href="single.html"><img src="images/大理.jpg" alt="" id='region_pic2'/></a>
+						<div class="top-grid-info">
+						<div class="main" id='main4'>
+							<a href="single.html" id='region_name2'>大理</a>
+							<p class="mainf" id="region_intro2">大理古城简称榆城，位居风光亮丽的苍山脚下，距大理市下关13公里。</p>
+							<p>大理古城始建于明洪武十五年（1382年）是全国首批历史文化名城之一。 大理古城东临洱海，西枕苍山，城楼雄伟，风光优美。大理城的规模壮阔，方围12里，原城墙高7.5米，厚6米，东西南北原有四座城门，上有城楼。如果说，自治州首府下关给人以繁盛、喧闹的印象，那么大理古城则是古朴而幽静。 </p>
+						</div>
+						<div class="intro">
+								<span class="key" onclick="fn(this,4)">展开全文</span>
+						</div>	
+						
+						</div>
+					</div>
+					<div class="top-grid">
+						<a href="single.html"><img src="images/yunnan.jpg" width="280px" height="160px" alt="" id='region_pic3'></a>
+						<div class="top-grid-info">
+							<div class="main" id='main5'>
+							<a href="single.html" id='region_name3'>云南</a>
+							<p class="mainf" id="region_intro3">云南以其美丽、丰饶、神奇而著称于世，一向被外界称为“秘境”，</p><p>吸引着世界各地的游客
+							美丽、富饶的云南，是祖国西南边疆的一块宝地，它土地辽阔、山川壮丽、资源丰富，是中华民族发祥地之一。早在170万年前，元谋人就在这里繁衍生息。这里是中国古代“南方丝绸之路”的重要重要通道和口岸</p>
+							</div>
+							<div class="intro">
+								<span class="key" onclick="fn(this,5)">展开全文</span>
+						</div>	
+						
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+
+			<!-- //container -->
+		</div>
+        <div class="copyrights">Collect from </div>
+		<!-- //banner-grids -->
+		<!-- who -->
+		<div class="who">
+			<!-- container -->
+			<div class="container">
+						<div class="top-grids">
+  <ul id="navCircle">
+<li><a class="active" href="#">当季热玩</a></li>
+<li><a href="news.html?id=1&type=season" id='b_0'>春季</a></li>
+<li><a href="news.html?id=2&type=season" id='b_1'>夏季</a></li>
+<li><a href="news.html?id=3&type=season" id='b_2'>秋季</a></li>
+<li><a href="news.html?id=4&type=season" id='b_3'>冬季</a></li>
+      </ul>
+					<div class="top-grid">
+						<a href="single.html"><img src="images/summer/神农架.jpg" alt="" width="275px" height="180px" /></a>
+						<div class="top-grid-info">
+							<a href="single.html">湖北    神农架林区</a>
+							<p>湖北    神农架林区，简称神农架，是中国唯一以“林区”命名的县级行政区，坐拥联合国“世界地质公园”</p>
+						</div>
+					</div>
+					<div class="top-grid">
+						<a href="single.html"><img src="images/summer/河北.jpg" alt="" width="275px" height="180px" /></a>
+						<div class="top-grid-info">	
+							<a href="single.html">河北 保定</a>
+							<p>保定市位于河北省中部，地处北京、天津、石家庄三角地带，素有“京畿重地”、“首都南大门”之称。</p>
+						</div>
+					</div>
+					<div class="top-grid">
+						<a href="single.html"><img src="images/summer/千山.jpg" alt="" width="275px" height="180px" /></a>
+						<div class="top-grid-info">
+							<a href="single.html">千山鞍山</a>
+							<p>千山美景，山上的空气非常好，是个不错的地方。爬山很过瘾。</p><br/>
+						</div>
+					</div>
+					<div class="top-grid">
+						<a href="single.html"><img src="images/summer/承德.jpg" alt="" width="275px" height="180px" /></a>
+						<div class="top-grid-info">
+							<a href="single.html">承德</a>
+							<p>著名的避暑胜地，空气清新，名气很大。壮观宏伟的皇家园林。</p><br/>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //who -->
+
+		<!-- before -->
+		<div class="before">
+			<!-- container -->
+			<div class="container">
+								<div class="top-grids"> 
+					<div class="top-grid">
+						<a href="#"><img src="images/2.jpg" width="270px"
+						 height="200px" id="pic_0" alt="" /></a>
+						<div class="top-grid-info">
+							<a href="single.html" id='name_0'>Vestibulum auctor</a>
+							<p id='intro_0'></p>
+						</div>
+					</div>
+					<div class="top-grid">
+						<a href="#"><img src="images/4.jpg" id="pic_1" alt="" / width="270px"
+						 height="200px" ></a>
+						<div class="top-grid-info">	
+							<a href="single.html" id='name_1'></a>
+							<p id='intro_1'></p>
+						</div>
+					</div>
+					<div class="top-grid">
+						<a href="#"><img src="images/4.jpg" id="pic_2" alt="" / width="270px"
+						 height="200px" ></a>
+						<div class="top-grid-info">	
+							<a href="single.html" id='name_2'></a>
+							<p id='intro_2'></p>
+						</div>
+					</div>
+					<div class="top-grid">
+						<a href="#" ><img src="images/4.jpg" id="pic_3" alt="" / width="270px"
+						 height="200px" ></a>
+						<div class="top-grid-info">	
+							<a href="single.html" id='name_3'></a>
+							<p id='intro_3'></p>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- //container -->
+		</div>
+		<footer>
+  <div class="foot">
+  <p>友情链接：
+笛风假期途牛微博客首都航空网易旅游中国经济网旅游百度旅游人民网旅游中国制造网51766旅游网成都青年旅行社欣欣旅游网驴妈妈旅游网奇艺旅游拉拉勾旅游网米胖旅游网百程旅行网新疆旅游酷讯旅游 wed114结婚网新通留学网二手车中国签证资讯网19楼途家网
+</p>
+</div>
+</footer> 
+		<!-- //footer -->
+		<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- content-Get-in-touch -->
+<script type="text/javascript">
+	$(function(){
+		$.ajax({
+			url:'wad/search',
+			method:'get',
+			dataType:'json',
+			success:function(data,status,xhr){
+				for(var i=0;i<data.length;i++){
+				$('#lake'+i).attr('href','single.html?id='+data[i].id);
+				}
+			},
+		})
+	})
+</script>	
+<script type="text/javascript">
+  $('#search').on('click',function(){
+    var _s=$('#s').val()
+    if(_s==1){
+
+          $.ajax({
+    url:'wad/search/counter',
+    type:'post',
+    data:{search:$('#input').val()},//后台查询数据
+    success:function(data,status,xhr){
+      if(data.counter==1){
+        window.location.href='booking.html?id='+data.id;
+      }
+      else if(data.counter>1){
+        window.location.href='about.html?search='+$('#input').val();
+      }
+      else{alert('没有符合条件')}
+     },
+    
+  })
+    }
+    else if(_s==2)
+    {
+    $.ajax({
+    url:'scenery/search/counter',
+    type:'post',
+    data:{search:$('#input').val()},//后台查询数据
+    success:function(data,status,xhr){
+      if(data.counter==1){
+        window.location.href='single.html?id='+data.id
+      }
+      else if(data.counter>1){
+        window.location.href='search.html?search='+$('#input').val()
+      }
+      else{alert('没有符合条件')}
+     },
+    
+  })
+    }
+      else
+      {
+        alert('cuowu')
+      }
+
+  })
+</script>
+
+
+	</body>
+</html>
